@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MainComponent } from './main/main.component';
+import { GreenModule } from './green/green.module';
 
 @NgModule({
   imports: [
@@ -15,11 +15,11 @@ import { MainComponent } from './main/main.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    GreenModule,
   ],
   declarations: [
     AppComponent,
     DashboardComponent,
-    MainComponent,
   ],
   bootstrap: [ AppComponent ]
 })
