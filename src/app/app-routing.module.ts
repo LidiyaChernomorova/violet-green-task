@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MainComponent } from './main/main.component';
+//import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'violet', component: MainComponent },
-  { path: 'rose', component: MainComponent }
+  // { path: 'violet', component: MainComponent },
+  // { path: 'green', component: MainComponent },
+  {
+    path: 'green',
+    loadChildren: () => import('./green/green.module').then(m => m.GreenModule)
+  },
+  {
+    path: 'violet',
+    loadChildren: () => import('./violet/violet.module').then(m => m.VioletModule)
+  },
 ];
 
 @NgModule({

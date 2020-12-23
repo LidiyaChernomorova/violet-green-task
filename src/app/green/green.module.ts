@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from '../main/main.component';
-
+import { GreenRoutingModule } from './green-routing.module'
 
 @NgModule({
-  declarations: [MainComponent],
+  declarations: [],
   imports: [
     CommonModule,
+    GreenRoutingModule,
   ]
 })
 export class GreenModule { }
