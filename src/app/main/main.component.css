@@ -1,0 +1,28 @@
+.list__container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.list__container :nth-child(1) {
+  order: 2;
+}
+.list__container :nth-child(2) {
+  order: 3;
+}
+.list__container :nth-child(3) {
+  order: 1;
+}
+.list__container :nth-child(4) {
+  order: 3;
+}
+.list__container :nth-child(5) {
+  order: 1;
+}
+
+.list__item {
+    background: cadetblue;
+    margin: 0 10px;
+    list-style-type: none;
+    padding: 20px;
+}
+
