@@ -7,8 +7,7 @@ export class MainService {
 
   constructor() { }
 
-  sayHi(){
-    console.log('Hi!');
-    return 'Hi!';
+  getItems(): number[]{
+    return [10, 20, 30, 40, 50];
   }
 }

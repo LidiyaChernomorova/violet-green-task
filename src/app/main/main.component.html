@@ -1,1 +1,6 @@
-<p>{{variableProperty}}</p>
+<ul>
+    <li *ngFor="let item of items; let i = index">
+      <div>{{i}}</div>
+      <div>{{item}}</div>
+    </li>
+  </ul>

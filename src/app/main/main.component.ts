@@ -7,12 +7,12 @@ import { MainService } from '../main.service'
 })
 export class MainComponent implements OnInit {
 
-  public variableProperty: string;
+  public items: number[];
 
   constructor(private mainService: MainService) { }
 
   ngOnInit(): void {
-   this.variableProperty = this.mainService.sayHi();
+   this.items = this.mainService.getItems();
   }
 
 }
