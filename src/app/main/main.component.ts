@@ -7,13 +7,13 @@ import { MainService } from '../main.service';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  public lol: string;
+  public settedColor: string;
   public items: number[];
 
   constructor(private mainService: MainService) {}
 
   ngOnInit(): void {
     this.items = this.mainService.getItems();
-    this.lol = this.mainService.getIt();
+    this.settedColor = this.mainService.getColor();
   }
 }

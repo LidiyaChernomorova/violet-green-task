@@ -1,17 +1,17 @@
 import { Injectable, Inject } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MainService {
+  constructor(@Inject('MainServiceColor') private mainServiceColor: string,
+  @Inject('MainServiceArray') private mainServiceArray: number[]) {}
 
-  constructor ( @Inject('MainServiceColor') private MainServiceColor: string) { }
-
-  getIt(){
-    return this.MainServiceColor;
+  getColor(): string {
+    return this.mainServiceColor;
   }
 
-  getItems(): number[]{
-    return [10, 20, 30, 40, 50];
+  getItems(): number[] {
+    return this.mainServiceArray;
   }
 }

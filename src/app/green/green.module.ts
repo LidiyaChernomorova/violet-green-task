@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { GreenRoutingModule } from './green-routing.module'
 import { MainService } from '../main.service';
-
+import { greenBlocksList } from './greenBlocksList.const'
 @NgModule({
   declarations: [],
   imports: [
@@ -13,6 +13,7 @@ import { MainService } from '../main.service';
   providers: [
     MainService,
     { provide: 'MainServiceColor', useValue: 'green' },
+    { provide: 'MainServiceArray', useValue: greenBlocksList },
   ],
 })
 export class GreenModule { }
