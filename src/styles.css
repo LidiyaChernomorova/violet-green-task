@@ -2,20 +2,14 @@
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  font-size: 1.2em;
+  margin-bottom: 0;
 }
-h2, h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
+
 body {
   margin: 2em;
 }
-body, input[text], button {
-  color: #333;
-  font-family: Cambria, Georgia;
-}
+
 a {
   cursor: pointer;
 }

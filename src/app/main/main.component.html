@@ -1,6 +1,6 @@
-<ul [ngStyle]="{ color: settedColor }" class="list__container">
-  <li class="list__item" *ngFor="let item of items; let i = index">
-    <div>{{ i }}</div>
-    <div>{{ item }}</div>
+<ul [ngStyle]="{ color: settedColor }">
+  <li *ngFor="let item of items | sort">
+    <div>index: {{ item.index }}</div>
+    <b>weight: {{ item.element }}</b>
   </li>
 </ul>
