@@ -8,8 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainComponent } from './main/main.component'
-
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,7 +20,7 @@ import { MainComponent } from './main/main.component'
     DashboardComponent,
     MainComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
 })
 export class AppModule { }
 

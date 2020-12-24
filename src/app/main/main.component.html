@@ -1,6 +1,11 @@
-<ul class="list__container">
+<div [ngStyle]="{ color: lol }">
+  <ul class="list__container">
     <li class="list__item" *ngFor="let item of items; let i = index">
-        <div>{{i}}</div>
-        <div>{{item}}</div>
+      <div>{{ i }}</div>
+      <div>{{ item }}</div>
     </li>
   </ul>
+
+  <p>lol:</p>
+  <p>{{ lol }}</p>
+</div>
